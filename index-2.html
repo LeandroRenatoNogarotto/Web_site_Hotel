@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Reserva Hotel Idis</title>
+    <link href="style-2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Faça sua Reserva</h1>
+    <form action="/login" method="get">
+    <fieldset>
+        <p>
+            <label for="username" >Nome completo:</label>
+            <input type="text" id="username" name="username" placeholder="Insira seu nome">
+        </p>
+    
+        
+        <label for="data_de_nascimento">Data de nascimento:</label>
+        <input type="date" id="data_de_nascimento">
+        
+        <input type="reset">
+        <br>
+        <p>
+            <label for="phone" >telefone:</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}">
+        </p>
+        
+        <p>
+            <label for="Endereço">Endereço:</label>
+            <input type="text" id="Endereço" name="Endereço" placeholder="Insira seu Endereço">
+        </p>
+
+        <p>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu Email">
+        </p>
+
+        <p>
+            <label for="Nacionalidade">Nacionalidade:</label>
+            <input type="text" id="Nacionalidade" name="Nacionalidade" placeholder="Insira sua Nacionalidade">
+        </p>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <p>
+            <label for="data_de_entrada">Data de entrada:</label>
+            <input type="datetime-local" id="data_de_entrada">
+        </p>
+    
+        <p>
+            <label for="Motivo">Motivo da viagem:</label>
+            <br>
+            <input type="radio" name="mot" id="turismo" value="turismo">
+            <label for="turismo">turismo</label>
+            <input type="radio" name="mot" id="trabalho" value="trabalho">
+            <label for="trabalho">trabalho</label>
+            <input type="radio" name="mot" id="outro" value="outro">
+            <label for="outro">outro</label>
+        <p>
+            <label>Numero de noites:
+                <input type="number" name="number"
+                min="1" max="50">
+            </label>
+        </p>
+        <p>
+            <label for="select">Tipo de quarto:</label>
+            <select name="select" id="select">
+                <option value="casal">Casal</option>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Familia">Familia</option>
+                <option value="Presedencial">Presedencial</option>
+            </select>
+
+            <label>Numero do quarto:
+                <input type="number" name="number"
+                min="1" max="50">
+            </label>
+        </p>
+        <p>
+            <label>numero de pessoas:
+                <input type="number" name="number"
+                min="1" max="10">
+            </label>
+        </p>
+        <p>
+            <label>numero de crianças:
+                <input type="number" name="number"
+                min="1" max="10">
+            </label>
+        </p>
+
+        <p>
+            <label for="Nessecidades_Especiais">Quarto Adaptado para Nessecidades Especiais?:</label>
+            <br>
+            <input type="radio" name="mot" id="turismo" value="turismo">
+            <label for="turismo">Não</label>
+            <input type="radio" name="mot" id="trabalho" value="trabalho">
+            <label for="trabalho">Sim</label>
+        <p>
+
+        <p>
+            <label for="textarea">Requerimentos especiais:</label>
+            <textarea rows="5" cols="80" name="textarea" id="texarea">
+            </textarea>
+        </p>
+        <!--
+        <p>
+            <label for="agree">Termo de compromisso:</label>
+            <input type="checkbox" name="agree">
+            <label for="agree">I agree</label>
+        </p>
+        -->
+    </fieldset>
+    <a href="index-3.html">Submit</a>
+    </form>
+</body>
+</html>
